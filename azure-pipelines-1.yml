@@ -8,10 +8,10 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: '5add2c40-3c60-43cd-b54c-c1058168f191'
+  azureSubscription: '48b8cb72-4d72-4319-9972-d2a3f6da7fcb'
 
   # Function app name
-  functionAppName: 'testapmedimaatje'
+  functionAppName: 'medimaatje-api-espen'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
