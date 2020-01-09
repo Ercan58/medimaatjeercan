@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ercan\\source\\repos\\azureapiercan\\azureapiercan\\azureapiercan.csproj": {}
+    "C:\\Users\\ercan\\Documents\\GitHub\\medimaatjeercan\\azureapiercan\\azureapiercan.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ercan\\source\\repos\\azureapiercan\\azureapiercan\\azureapiercan.csproj": {
+    "C:\\Users\\ercan\\Documents\\GitHub\\medimaatjeercan\\azureapiercan\\azureapiercan.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ercan\\source\\repos\\azureapiercan\\azureapiercan\\azureapiercan.csproj",
+        "projectUniqueName": "C:\\Users\\ercan\\Documents\\GitHub\\medimaatjeercan\\azureapiercan\\azureapiercan.csproj",
         "projectName": "azureapiercan",
-        "projectPath": "C:\\Users\\ercan\\source\\repos\\azureapiercan\\azureapiercan\\azureapiercan.csproj",
+        "projectPath": "C:\\Users\\ercan\\Documents\\GitHub\\medimaatjeercan\\azureapiercan\\azureapiercan.csproj",
         "packagesPath": "C:\\Users\\ercan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ercan\\source\\repos\\azureapiercan\\azureapiercan\\obj\\",
+        "outputPath": "C:\\Users\\ercan\\Documents\\GitHub\\medimaatjeercan\\azureapiercan\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ercan\\AppData\\Roaming\\NuGet\\NuGet.Config",
