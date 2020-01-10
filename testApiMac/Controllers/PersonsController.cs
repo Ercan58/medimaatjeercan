@@ -6,14 +6,15 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Collections;
 
 namespace testApiMac.Controllers
-{ 
+{
     [Route("api/[Controller]")]
     [ApiController]
-    public class PersonsController:ControllerBase
+    public class PersonsController : ControllerBase
     {
-     private readonly ercansjoeppiedb _Context;
+        private readonly ercansjoeppiedb _Context;
 
         public PersonsController(ercansjoeppiedb context) {
             _Context = context;
@@ -22,9 +23,18 @@ namespace testApiMac.Controllers
 
         //GET API PERSONS
         [HttpGet]
-        public ActionResult<IEnumerable<Persons>> GetPersons()
+        public ActionResult<IEnumerable<Persons>> GetPersons(string naam)
         {
-            return _Context.Persons;
+            
+
+            if (naam == null)
+            {
+                return _Context.Persons;
+            }
+            var command = _Context.Persons.FirstOrDefault(ba=>ba.Naam == naam);
+            var enumerable = new[] { command };
+            return enumerable;
+
         }
 
         [HttpGet("{id}")]
@@ -37,6 +47,11 @@ namespace testApiMac.Controllers
 
             return command;
         }
+
+
+
+
+
 
         [HttpPost]
         public ActionResult<Persons> PostPersons(Persons person)

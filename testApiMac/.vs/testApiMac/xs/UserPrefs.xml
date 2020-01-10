@@ -7,19 +7,17 @@
       <File FileName="WeatherForecast.cs" Line="1" Column="1" />
       <File FileName="Program.cs" Line="1" Column="1" />
       <File FileName="appsettings.json" Line="11" Column="161" />
-      <File FileName="Model/ercansjoeppiedb.cs" Line="1" Column="1" />
+      <File FileName="Model/ercansjoeppiedb.cs" Line="17" Column="1" />
       <File FileName="Model/Persons.cs" Line="11" Column="33" />
       <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="testApiMac" expanded="True">
+          <Node name="testApiMac" expanded="True" selected="True">
             <Node name="testApiMac" expanded="True">
               <Node name="Controllers" expanded="True" />
-              <Node name="Model" expanded="True">
-                <Node name="ercansjoeppiedb.cs" selected="True" />
-              </Node>
+              <Node name="Model" expanded="True" />
             </Node>
           </Node>
         </State>
