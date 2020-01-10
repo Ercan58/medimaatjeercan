@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{5D5F74C8-8179-4B0C-BBBC-87E7CC9A126F}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Model/ercansjoeppiedb.cs">
+    <Files>
+      <File FileName="Controllers/WeatherForecastController.cs" Line="30" Column="52" />
+      <File FileName="Controllers/PersonsController.cs" Line="64" Column="20" />
+      <File FileName="Startup.cs" Line="35" Column="95" />
+      <File FileName="WeatherForecast.cs" Line="1" Column="1" />
+      <File FileName="Program.cs" Line="1" Column="1" />
+      <File FileName="appsettings.json" Line="11" Column="161" />
+      <File FileName="Model/ercansjoeppiedb.cs" Line="1" Column="1" />
+      <File FileName="Model/Persons.cs" Line="11" Column="33" />
+      <File FileName="Properties/launchSettings.json" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="testApiMac" expanded="True">
+            <Node name="testApiMac" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Model" expanded="True">
+                <Node name="ercansjoeppiedb.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.testApiMac PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

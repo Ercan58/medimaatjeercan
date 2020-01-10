@@ -10,6 +10,11 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using testApiMac.Model;
+using Microsoft.Extensions.Configuration;
+using Microsoft.EntityFrameworkCore;
+
+
 
 namespace testApiMac
 {
@@ -25,7 +30,9 @@ namespace testApiMac
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            var connection = Configuration.GetConnectionString("JoeppieDBContext");
+            services.AddDbContext<ercansjoeppiedb>(options=>options.UseSqlServer(connection));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
