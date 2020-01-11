@@ -31,21 +31,21 @@ namespace testApiMac.Controllers
             {
                 return _Context.Persons;
             }
-            var command = _Context.Persons.FirstOrDefault(ba=>ba.Naam == naam);
-            var enumerable = new[] { command };
+            var persons = _Context.Persons.FirstOrDefault(ba=>ba.Naam == naam);
+            var enumerable = new[] { persons };
             return enumerable;
 
         }
 
         [HttpGet("{id}")]
         public ActionResult<Persons> GetPerson(int id) {
-            var command = _Context.Persons.Find(id);
-            if (command == null)
+            var persons = _Context.Persons.Find(id);
+            if (persons == null)
             {
                 return NotFound();
             }
 
-            return command;
+            return persons;
         }
 
 
@@ -64,16 +64,31 @@ namespace testApiMac.Controllers
         [HttpPut("{id}")]
         public ActionResult<Persons> putPerson(int id, Persons person)
         {
-            var command = _Context.Persons.Find(id);
-            if (command == null)
+            var persons = _Context.Persons.Find(id);
+            if (persons == null)
             {
                 return NotFound();
             }
 
 
-            command.Naam = person.Naam;
-            command.Adres = person.Adres;
-            command.Leeftijd = person.Leeftijd;
+            persons.Naam = person.Naam;
+            persons.Adres = person.Adres;
+            persons.Leeftijd = person.Leeftijd;
+            _Context.SaveChanges();
+
+            return NoContent();
+        }
+
+        [HttpDelete]
+        public ActionResult<Persons> deletePerson(int id)
+        {
+            var person = _Context.Persons.Find(id);
+            if (person == null)
+            {
+                return NotFound();
+            }
+
+            _Context.Persons.Remove(person);
             _Context.SaveChanges();
 
             return NoContent();

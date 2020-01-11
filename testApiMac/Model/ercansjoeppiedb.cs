@@ -21,8 +21,7 @@ namespace testApiMac.Model
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
-                optionsBuilder.UseSqlServer("Server=tcp:ercansjoeppiedb.database.windows.net,1433;Initial Catalog=JoeppieDB;Persist Security Info=False;User ID=ercankalan;Password=Testercan1!; MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;");
+                optionsBuilder.UseSqlServer(@"<connection string>");
             }
         }
 
